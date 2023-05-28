@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charSet="utf-8" />
+    <title>Token Management | Flare</title>
+    <meta name="og:title" content="Token Management | Flare" />
+    <meta name="title" content="Token Management | Flare" />
+    <meta property="og:url" content="https://portal.flare.network/" />
+    <meta property="og:site_name" content="Flare portal" />
+    <meta name="og:description" content="Flare is a new blockchain which presents developers with a simple and coherent stack for decentralized interoperability." />
+    <meta name="description" content="Flare is a new blockchain which presents developers with a simple and coherent stack for decentralized interoperability." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://portal.flare.network/primary_logo_pink.png" />
+    <meta name="og:image:alt" content="Flare logo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="icon" type="image/svg+xml" href="/flare_secondary_icon_only.svg" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/svg+xml" href="/flare_secondary_icon_only_light.svg" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.flare.ico" />
+    <meta name="next-head-count" content="17" />
+    <link rel="preload" href="/_next/static/css/2bfec322452edb64.css" as="style" />
+    <link rel="stylesheet" href="/_next/static/css/2bfec322452edb64.css" data-n-g="" /><noscript data-n-css=""></noscript>
+    <script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+    <script src="/_next/static/chunks/webpack-992f997fccc36c29.js" defer=""></script>
+    <script src="/_next/static/chunks/framework-0ba0ddd33199226d.js" defer=""></script>
+    <script src="/_next/static/chunks/main-dcb89eed33db9a3d.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/_app-2e10e17862079bbd.js" defer=""></script>
+    <script src="/_next/static/chunks/612-c9b70ae49e128cfb.js" defer=""></script>
+    <script src="/_next/static/chunks/579-502800cbca432dea.js" defer=""></script>
+    <script src="/_next/static/chunks/123-4b91f53726ac536f.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/index-e13f1f7640dd6605.js" defer=""></script>
+    <script src="/_next/static/nD-tk7K8E7klCFbtQD9IC/_buildManifest.js" defer=""></script>
+    <script src="/_next/static/nD-tk7K8E7klCFbtQD9IC/_ssgManifest.js" defer=""></script>
+    <style data-emotion="mantine 1rxmib7 won2td m9khxc 5p7ky9 yr6gp8 97bdev ytj1kk 1wpc1xj 1ryt1ht 2zlrf4 24g4de 1wa3as1 95d6ju 1et1q90 185vrs9 7iltrg 1o0ucw 1yi7w5c 1i0g35a 1dsv8nr ry66jd 1on4co 12y81md 1i5k3yh q9omll ojrz4j 14du78f 1bvgs2p on1gjd 4ebkic 17sxbm9 1qij692 12x1imf yi0zve 1texcr8 iy2h3n at1kdl 1cju4lw 1qcoa9t 2k5q65 1l4g2hm 13nr4qr 1edgdrn">
+        .mantine-1rxmib7 {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            box-sizing: border-box;
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+        }
+
+        .mantine-won2td {
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            width: 100vw;
+            box-sizing: border-box;
+            padding: 1.25rem;
+        }
+
+        .mantine-m9khxc {
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .mantine-5p7ky9 {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            height: 4.375rem;
+            max-height: 4.375rem;
+            position: static;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-bottom: 0.0625rem solid #e9ecef;
+            border-bottom: 1px solid #DEDEDE;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        @media (min-width: 50em) {
+            .mantine-5p7ky9 {
+                display: none;
+            }
+        }
+
+        .mantine-yr6gp8 {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            gap: 1.25rem;
+        }
+
+        .mantine-yr6gp8>* {
+            box-sizing: border-box;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+        }
+
+        .mantine-97bdev {
+            -webkit-tap-highlight-color: transparent;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            cursor: pointer;
+            border: 0;
+            padding: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            font-size: 0.9375rem;
+            background-color: transparent;
+            text-align: left;
+            color: #000;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        .mantine-97bdev:focus {
+            outline-offset: 0.125rem;
+            outline: 0.125rem solid #282829;
+        }
+
+        .mantine-97bdev:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        .mantine-ytj1kk {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            gap: 0.125rem;
+        }
+
+        .mantine-ytj1kk>* {
+            box-sizing: border-box;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+        }
+
+        .mantine-1wpc1xj {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            height: 100%;
+            overflow: visible;
+        }
+
+        .mantine-1ryt1ht {
+            white-space: nowrap;
+            height: 100%;
+            overflow: hidden;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .mantine-2zlrf4 {
+            -webkit-tap-highlight-color: transparent;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            cursor: pointer;
+            border: 0;
+            padding: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            font-size: 0.9375rem;
+            background-color: transparent;
+            text-align: left;
+            color: #000;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            height: 3.125rem;
+            padding-left: 1.625rem;
+            padding-right: 1.625rem;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            -webkit-tap-highlight-color: transparent;
+            display: inline-block;
+            width: auto;
+            border-radius: 1.5rem;
+            font-weight: 600;
+            position: relative;
+            line-height: 1;
+            font-size: 1rem;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: pointer;
+            border: 0.0625rem solid #242425;
+            background-color: transparent;
+            color: #242425;
+            min-width: 176px;
+            max-height: 46px;
+            -webkit-transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+            transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+        }
+
+        .mantine-2zlrf4:focus {
+            outline-offset: 0.125rem;
+            outline: 0.125rem solid #282829;
+        }
+
+        .mantine-2zlrf4:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        .mantine-2zlrf4:focus {
+            outline-offset: 0.125rem;
+            outline: 0.125rem solid #282829;
+        }
+
+        .mantine-2zlrf4:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        @media (hover: hover) {
+            .mantine-2zlrf4:hover {
+                background-color: rgba(64, 64, 65, 0.35);
+            }
+        }
+
+        @media (hover: none) {
+            .mantine-2zlrf4:active {
+                background-color: rgba(64, 64, 65, 0.35);
+            }
+        }
+
+        .mantine-2zlrf4:active {
+            -webkit-transform: translateY(0.0625rem);
+            -moz-transform: translateY(0.0625rem);
+            -ms-transform: translateY(0.0625rem);
+            transform: translateY(0.0625rem);
+        }
+
+        .mantine-2zlrf4:disabled,
+        .mantine-2zlrf4[data-disabled] {
+            border-color: transparent;
+            background-color: #e9ecef;
+            color: #adb5bd;
+            cursor: not-allowed;
+            background-image: none;
+            pointer-events: none;
+        }
+
+        .mantine-2zlrf4:disabled:active,
+        .mantine-2zlrf4[data-disabled]:active {
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            transform: none;
+        }
+
+        .mantine-2zlrf4[data-loading] {
+            pointer-events: none;
+        }
+
+        .mantine-2zlrf4[data-loading]::before {
+            content: "";
+            position: absolute;
+            top: -0.0625rem;
+            right: -0.0625rem;
+            left: -0.0625rem;
+            bottom: -0.0625rem;
+            background-color: rgba(255, 255, 255, .5);
+            border-radius: 1.5rem;
+            cursor: not-allowed;
+        }
+
+        @media (hover: hover) {
+            .mantine-2zlrf4:not([data-disabled]):hover {
+                color: #E62058;
+                border-color: #E62058;
+                background-color: transparent;
+            }
+        }
+
+        @media (hover: none) {
+            .mantine-2zlrf4:not([data-disabled]):active {
+                color: #E62058;
+                border-color: #E62058;
+                background-color: transparent;
+            }
+        }
+
+        .mantine-2zlrf4:active {
+            color: #E62058;
+            border-color: #E62058;
+            background-color: transparent;
+        }
+
+        @media (max-width: 49.9375em) {
+            .mantine-2zlrf4 {
+                display: none;
+            }
+        }
+
+        .mantine-24g4de {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            -webkit-tap-highlight-color: transparent;
+            color: inherit;
+            font-size: 0.9375rem;
+            line-height: 1.55;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+        }
+
+        .mantine-24g4de:focus {
+            outline-offset: 0.125rem;
+            outline: 0.125rem solid #282829;
+        }
+
+        .mantine-24g4de:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        .mantine-1wa3as1 {
+            -webkit-tap-highlight-color: transparent;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            cursor: pointer;
+            border: 0;
+            padding: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            font-size: 0.9375rem;
+            background-color: transparent;
+            text-align: left;
+            color: #000;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            height: 2.25rem;
+            padding-left: 1.125rem;
+            padding-right: 1.125rem;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            -webkit-tap-highlight-color: transparent;
+            display: inline-block;
+            width: auto;
+            border-radius: 1.5rem;
+            font-weight: 600;
+            position: relative;
+            line-height: 1;
+            font-size: 0.875rem;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: pointer;
+            border: 0.0625rem solid #242425;
+            background-color: transparent;
+            color: #242425;
+        }
+
+        .mantine-1wa3as1:focus {
+            outline-offset: 0.125rem;
+            outline: 0.125rem solid #282829;
+        }
+
+        .mantine-1wa3as1:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        .mantine-1wa3as1:focus {
+            outline-offset: 0.125rem;
+            outline: 0.125rem solid #282829;
+        }
+
+        .mantine-1wa3as1:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        @media (hover: hover) {
+            .mantine-1wa3as1:hover {
+                background-color: rgba(64, 64, 65, 0.35);
+            }
+        }
+
+        @media (hover: none) {
+            .mantine-1wa3as1:active {
+                background-color: rgba(64, 64, 65, 0.35);
+            }
+        }
+
+        .mantine-1wa3as1:active {
+            -webkit-transform: translateY(0.0625rem);
+            -moz-transform: translateY(0.0625rem);
+            -ms-transform: translateY(0.0625rem);
+            transform: translateY(0.0625rem);
+        }
+
+        .mantine-1wa3as1:disabled,
+        .mantine-1wa3as1[data-disabled] {
+            border-color: transparent;
+            background-color: #e9ecef;
+            color: #adb5bd;
+            cursor: not-allowed;
+            background-image: none;
+            pointer-events: none;
+        }
+
+        .mantine-1wa3as1:disabled:active,
+        .mantine-1wa3as1[data-disabled]:active {
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            transform: none;
+        }
+
+        .mantine-1wa3as1[data-loading] {
+            pointer-events: none;
+        }
+
+        .mantine-1wa3as1[data-loading]::before {
+            content: "";
+            position: absolute;
+            top: -0.0625rem;
+            right: -0.0625rem;
+            left: -0.0625rem;
+            bottom: -0.0625rem;
+            background-color: rgba(255, 255, 255, .5);
+            border-radius: 1.5rem;
+            cursor: not-allowed;
+        }
+
+        @media (hover: hover) {
+            .mantine-1wa3as1:not([data-disabled]):hover {
+                color: #E62058;
+                border-color: #E62058;
+                background-color: transparent;
+            }
+        }
+
+        @media (hover: none) {
+            .mantine-1wa3as1:not([data-disabled]):active {
+                color: #E62058;
+                border-color: #E62058;
+                background-color: transparent;
+            }
+        }
+
+        .mantine-1wa3as1:active {
+            color: #E62058;
+            border-color: #E62058;
+            background-color: transparent;
+        }
+
+        @media (min-width: 50em) {
+            .mantine-1wa3as1 {
+                display: none;
+            }
+        }
+
+        .mantine-95d6ju {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            -webkit-tap-highlight-color: transparent;
+            color: inherit;
+            font-size: 0.875rem;
+            line-height: 1.55;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+        }
+
+        .mantine-95d6ju:focus {
+            outline-offset: 0.125rem;
+            outline: 0.125rem solid #282829;
+        }
+
+        .mantine-95d6ju:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        .mantine-1et1q90 {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            height: 5.9375rem;
+            max-height: 5.9375rem;
+            position: static;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-bottom: 0.0625rem solid #e9ecef;
+            border-bottom: 1px solid #DEDEDE;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+
+        @media (max-width: 49.9375em) {
+            .mantine-1et1q90 {
+                display: none;
+            }
+        }
+
+        .mantine-185vrs9 {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            gap: 1.25rem;
+        }
+
+        .mantine-185vrs9>* {
+            box-sizing: border-box;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+        }
+
+        @media (min-width: 87.5em) {
+            .mantine-185vrs9 {
+                display: none;
+            }
+        }
+
+        .mantine-7iltrg {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            gap: 1.75rem;
+        }
+
+        .mantine-7iltrg>* {
+            box-sizing: border-box;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+        }
+
+        .mantine-1o0ucw {
+            -webkit-tap-highlight-color: transparent;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            cursor: pointer;
+            border: 0;
+            padding: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            font-size: 0.9375rem;
+            background-color: transparent;
+            text-align: left;
+            color: #000;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            height: 100%;
+            padding-bottom: 20px;
+            margin-top: 10px;
+            color: #242425;
+            border-bottom: 3px solid #242425;
+        }
+
+        .mantine-1o0ucw:focus {
+            outline-offset: 0.125rem;
+            outline: 0.125rem solid #282829;
+        }
+
+        .mantine-1o0ucw:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        @media (max-width: 87.5em) {
+            .mantine-1o0ucw {
+                padding-bottom: 0;
+                margin: 0;
+            }
+        }
+
+        @media (min-width: 55rem) {
+            .mantine-1yi7w5c {
+                display: none;
+            }
+        }
+
+        .mantine-1i0g35a {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            -webkit-tap-highlight-color: transparent;
+            color: currentColor;
+            font-size: 1.25rem;
+            line-height: 1.55;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+        }
+
+        .mantine-1i0g35a:focus {
+            outline-offset: 0.125rem;
+            outline: 0.125rem solid #282829;
+        }
+
+        .mantine-1i0g35a:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        @media (max-width: 54.9375em) {
+            .mantine-1i0g35a {
+                display: none;
+            }
+        }
+
+        .mantine-1dsv8nr {
+            -webkit-tap-highlight-color: transparent;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            cursor: pointer;
+            border: 0;
+            padding: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            font-size: 0.9375rem;
+            background-color: transparent;
+            text-align: left;
+            color: #000;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            height: 100%;
+            padding-bottom: 20px;
+            margin-top: 10px;
+            color: #242425;
+            border-bottom: 3px solid transparent;
+        }
+
+        .mantine-1dsv8nr:focus {
+            outline-offset: 0.125rem;
+            outline: 0.125rem solid #282829;
+        }
+
+        .mantine-1dsv8nr:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        @media (max-width: 87.5em) {
+            .mantine-1dsv8nr {
+                padding-bottom: 0;
+                margin: 0;
+            }
+        }
+
+        .mantine-ry66jd {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+            gap: 0.9375rem;
+        }
+
+        .mantine-ry66jd>* {
+            box-sizing: border-box;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+        }
+
+        .mantine-1on4co {
+            -webkit-transition: -webkit-transform 150ms ease;
+            transition: transform 150ms ease;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+            color: currentColor;
+        }
+
+        .mantine-12y81md {
+            -webkit-transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+            transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+            border: 1px solid #242425;
+            border-radius: 1.938rem;
+            min-width: 176px;
+            padding: 0.125rem;
+            padding-left: 0.25rem;
+        }
+
+        .mantine-12y81md:hover {
+            color: #E62058;
+            border-color: #E62058;
+        }
+
+        .mantine-12y81md:active {
+            color: #E62058;
+            border-color: #E62058;
+        }
+
+        .mantine-1i5k3yh {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            gap: 0.9375rem;
+        }
+
+        .mantine-1i5k3yh>* {
+            box-sizing: border-box;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+        }
+
+        @media (min-width: 50em) {
+            .mantine-1i5k3yh {
+                display: none;
+            }
+        }
+
+        .mantine-q9omll {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            -webkit-tap-highlight-color: transparent;
+            color: currentColor;
+            font-size: 1.25rem;
+            line-height: 1.55;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+        }
+
+        .mantine-q9omll:focus {
+            outline-offset: 0.125rem;
+            outline: 0.125rem solid #282829;
+        }
+
+        .mantine-q9omll:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        .mantine-ojrz4j {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+
+        .mantine-14du78f {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            gap: 0.9375rem;
+        }
+
+        .mantine-14du78f>* {
+            box-sizing: border-box;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+        }
+
+        @media (max-width: 49.9375em) {
+            .mantine-14du78f {
+                display: none;
+            }
+        }
+
+        .mantine-1bvgs2p {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            gap: 0.9375rem;
+        }
+
+        .mantine-1bvgs2p>* {
+            box-sizing: border-box;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+        }
+
+        .mantine-on1gjd {
+            margin: calc(-1.25rem / 2);
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin: 0rem;
+        }
+
+        @media (max-width: 87.4375em) {
+            .mantine-on1gjd {
+                display: none;
+            }
+        }
+
+        .mantine-4ebkic {
+            box-sizing: border-box;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+            padding: calc(1.25rem / 2);
+            -webkit-flex-basis: 33.333333333333336%;
+            -ms-flex-preferred-size: 33.333333333333336%;
+            flex-basis: 33.333333333333336%;
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            max-width: 33.333333333333336%;
+        }
+
+        @media (min-width: 34.375em) {
+            .mantine-4ebkic {
+                -webkit-flex-shrink: 0;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+            }
+        }
+
+        @media (min-width: 50em) {
+            .mantine-4ebkic {
+                -webkit-flex-shrink: 0;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+            }
+        }
+
+        @media (min-width: 58.75em) {
+            .mantine-4ebkic {
+                -webkit-flex-shrink: 0;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+            }
+        }
+
+        @media (min-width: 75em) {
+            .mantine-4ebkic {
+                -webkit-flex-shrink: 0;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+            }
+        }
+
+        @media (min-width: 87.5em) {
+            .mantine-4ebkic {
+                -webkit-flex-shrink: 0;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+            }
+        }
+
+        .mantine-17sxbm9 {
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            max-width: 57.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding-right: 0rem;
+            padding-left: 0rem;
+        }
+
+        .mantine-1qij692 {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            gap: 0.625rem;
+            padding-top: 44px;
+            padding-bottom: 1.25rem;
+            padding-left: 1.25rem;
+        }
+
+        .mantine-1qij692>* {
+            box-sizing: border-box;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+        }
+
+        @media (max-width: 50empx) {
+            .mantine-1qij692 {
+                padding-top: 20px;
+            }
+        }
+
+        .mantine-12x1imf {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            -webkit-tap-highlight-color: transparent;
+            color: #242425;
+            font-size: inherit;
+            line-height: 1.55;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            font-weight: 700;
+            font-size: 1.375rem;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        .mantine-12x1imf:focus {
+            outline-offset: 0.125rem;
+            outline: 0.125rem solid #282829;
+        }
+
+        .mantine-12x1imf:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        .mantine-yi0zve {
+            outline: 0;
+            -webkit-tap-highlight-color: transparent;
+            display: block;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            color: #000;
+            background-color: #fff;
+            box-sizing: border-box;
+            border-radius: 0.9375rem;
+            box-shadow: none;
+            position: relative;
+            overflow: hidden;
+            background-color: #fff;
+            padding: 1.25rem;
+        }
+
+        .mantine-yi0zve[data-with-border] {
+            border: 0.0625rem solid #dee2e6;
+        }
+
+        .mantine-1texcr8 {
+            display: block;
+            margin-left: calc(-1 * 1.25rem);
+            margin-right: calc(-1 * 1.25rem);
+        }
+
+        .mantine-1texcr8+.mantine-1texcr8 {
+            border-top: 0;
+        }
+
+        .mantine-1texcr8[data-first] {
+            margin-top: calc(-1 * 1.25rem);
+            border-top: 0;
+        }
+
+        .mantine-1texcr8[data-last] {
+            margin-bottom: calc(-1 * 1.25rem);
+            border-bottom: 0;
+        }
+
+        .mantine-iy2h3n {
+            background: #242425;
+            color: #ffffff;
+            font-size: 0.9375rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+        }
+
+        .mantine-at1kdl {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            -webkit-tap-highlight-color: transparent;
+            color: inherit;
+            font-size: inherit;
+            line-height: 1.55;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+        }
+
+        .mantine-at1kdl:focus {
+            outline-offset: 0.125rem;
+            outline: 0.125rem solid #282829;
+        }
+
+        .mantine-at1kdl:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        .mantine-1cju4lw {
+            width: 0rem;
+            min-width: 0rem;
+            height: 1.25rem;
+            min-height: 1.25rem;
+        }
+
+        .mantine-1qcoa9t {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            -webkit-tap-highlight-color: transparent;
+            color: inherit;
+            font-size: inherit;
+            line-height: 1.55;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            color: #E62058;
+            cursor: pointer;
+            -webkit-text-decoration: underline;
+            text-decoration: underline;
+        }
+
+        .mantine-1qcoa9t:focus {
+            outline-offset: 0.125rem;
+            outline: 0.125rem solid #282829;
+        }
+
+        .mantine-1qcoa9t:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        .mantine-2k5q65 {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            height: 5rem;
+            max-height: 5rem;
+            position: static;
+            box-sizing: border-box;
+            background-color: #fff;
+            padding-bottom: 97px;
+        }
+
+        .mantine-1l4g2hm {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            gap: 1.9375rem;
+        }
+
+        .mantine-1l4g2hm>* {
+            box-sizing: border-box;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+        }
+
+        .mantine-13nr4qr {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            -webkit-tap-highlight-color: transparent;
+            color: #868e96;
+            font-size: 1rem;
+            line-height: 1.55;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+        }
+
+        .mantine-13nr4qr:focus {
+            outline-offset: 0.125rem;
+            outline: 0.125rem solid #282829;
+        }
+
+        .mantine-13nr4qr:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        .mantine-1edgdrn {
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            gap: 1.25rem;
+        }
+
+        .mantine-1edgdrn>* {
+            box-sizing: border-box;
+            -webkit-box-flex: 0;
+            -webkit-flex-grow: 0;
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="__next">
+        <style data-emotion="css-global 1w883ez">
+            html {
+                font-family: sans-serif;
+                line-height: 1.15;
+                -webkit-text-size-adjust: 100%;
+                -moz-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                text-size-adjust: 100%;
+            }
+
+            body {
+                margin: 0;
+            }
+
+            article,
+            aside,
+            footer,
+            header,
+            nav,
+            section,
+            figcaption,
+            figure,
+            main {
+                display: block;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            hr {
+                box-sizing: content-box;
+                height: 0;
+                overflow: visible;
+            }
+
+            pre {
+                font-family: monospace, monospace;
+                font-size: 1em;
+            }
+
+            a {
+                background: transparent;
+                text-decoration-skip: objects;
+            }
+
+            a:active,
+            a:hover {
+                outline-width: 0;
+            }
+
+            abbr[title] {
+                border-bottom: none;
+                -webkit-text-decoration: underline;
+                text-decoration: underline;
+            }
+
+            b,
+            strong {
+                font-weight: bolder;
+            }
+
+            code,
+            kbp,
+            samp {
+                font-family: monospace, monospace;
+                font-size: 1em;
+            }
+
+            dfn {
+                font-style: italic;
+            }
+
+            mark {
+                background-color: #ff0;
+                color: #000;
+            }
+
+            small {
+                font-size: 80%;
+            }
+
+            sub,
+            sup {
+                font-size: 75%;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline;
+            }
+
+            sup {
+                top: -0.5em;
+            }
+
+            sub {
+                bottom: -0.25em;
+            }
+
+            audio,
+            video {
+                display: inline-block;
+            }
+
+            audio:not([controls]) {
+                display: none;
+                height: 0;
+            }
+
+            img {
+                border-style: none;
+                vertical-align: middle;
+            }
+
+            svg:not(:root) {
+                overflow: hidden;
+            }
+
+            button,
+            input,
+            optgroup,
+            select,
+            textarea {
+                font-family: sans-serif;
+                font-size: 100%;
+                line-height: 1.15;
+                margin: 0;
+            }
+
+            button,
+            input {
+                overflow: visible;
+            }
+
+            button,
+            select {
+                text-transform: none;
+            }
+
+            button,
+            [type=reset],
+            [type=submit] {
+                -webkit-appearance: button;
+            }
+
+            button::-moz-focus-inner,
+            [type=button]::-moz-focus-inner,
+            [type=reset]::-moz-focus-inner,
+            [type=submit]::-moz-focus-inner {
+                border-style: none;
+                padding: 0;
+            }
+
+            button:-moz-focusring,
+            [type=button]:-moz-focusring,
+            [type=reset]:-moz-focusring,
+            [type=submit]:-moz-focusring {
+                outline: 0.0625rem dotted ButtonText;
+            }
+
+            legend {
+                box-sizing: border-box;
+                color: inherit;
+                display: table;
+                max-width: 100%;
+                padding: 0;
+                white-space: normal;
+            }
+
+            progress {
+                display: inline-block;
+                vertical-align: baseline;
+            }
+
+            textarea {
+                overflow: auto;
+            }
+
+            [type=checkbox],
+            [type=radio] {
+                box-sizing: border-box;
+                padding: 0;
+            }
+
+            [type=number]::-webkit-inner-spin-button,
+            [type=number]::-webkit-outer-spin-button {
+                height: auto;
+            }
+
+            [type=search] {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -ms-appearance: none;
+                appearance: none;
+            }
+
+            [type=search]::-webkit-search-cancel-button,
+            [type=search]::-webkit-search-decoration {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -ms-appearance: none;
+                appearance: none;
+            }
+
+            ::-webkit-file-upload-button {
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                -ms-appearance: button;
+                appearance: button;
+                font: inherit;
+            }
+
+            details,
+            menu {
+                display: block;
+            }
+
+            summary {
+                display: -webkit-box;
+                display: -webkit-list-item;
+                display: -ms-list-itembox;
+                display: list-item;
+            }
+
+            canvas {
+                display: inline-block;
+            }
+
+            template {
+                display: none;
+            }
+        </style>
+        <style data-emotion="css-global t9rjlt">
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+
+            html {
+                -webkit-print-color-scheme: light;
+                color-scheme: light;
+            }
+
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+                background-color: #fff;
+                color: #000;
+                line-height: 1.55;
+                font-size: 0.9375rem;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        </style>
+        <div class="mantine-AppShell-root mantine-m9khxc">
+            <header class="mantine-Header-root mantine-MediaQuery-media mantine-5p7ky9">
+                <div class="mantine-Group-root mantine-yr6gp8" style="height:100%"><a class="mantine-UnstyledButton-root mantine-97bdev" aria-label="Flare portal Home" href="/"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27103%27%20height=%2733%27/%3e"/></span><img alt="flare_logo" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/><noscript><img alt="flare_logo" srcSet="/flare_secondary_logo.svg 1x, /flare_secondary_logo.svg 2x" src="/flare_secondary_logo.svg" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" loading="lazy"/></noscript></span></a>
+                    <div
+                        class="mantine-Group-root mantine-ytj1kk"><a href="./connect/keystore.html"><button class="mantine-UnstyledButton-root mantine-Button-root mantine-MediaQuery-media mantine-2zlrf4" type="button" data-button="true"><div class="mantine-1wpc1xj mantine-Button-inner"><span class="mantine-1ryt1ht mantine-Button-label"><div class="mantine-Text-root mantine-24g4de">Connect to Wallet</div></span></div></button></a>
+                    <button
+                            class="mantine-UnstyledButton-root mantine-Button-root mantine-MediaQuery-media mantine-1wa3as1" type="button" data-button="true">
+                            <div class="mantine-1wpc1xj mantine-Button-inner"><span class="mantine-1ryt1ht mantine-Button-label"><div class="mantine-Text-root mantine-95d6ju">Connect to Wallet</div></span></div>
+                            </button>
+                </div>
+        </div>
+        <style data-emotion="css-global 1jbjz42">
+            :root {
+                --mantine-header-height: 4.375rem;
+            }
+        </style>
+        </header>
+        <header class="mantine-Header-root mantine-MediaQuery-media mantine-1et1q90">
+            <div class="mantine-Group-root mantine-MediaQuery-media mantine-185vrs9" style="height:100%"><a class="mantine-UnstyledButton-root mantine-97bdev" aria-label="Flare portal Home" href="/"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27103%27%20height=%2733%27/%3e"/></span><img alt="flare_logo" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/><noscript><img alt="flare_logo" srcSet="/flare_secondary_logo.svg 1x, /flare_secondary_logo.svg 2x" src="/flare_secondary_logo.svg" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" loading="lazy"/></noscript></span></a>
+                <div
+                    class="mantine-Group-root mantine-7iltrg" style="height:100%"><button class="mantine-UnstyledButton-root mantine-1o0ucw" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="40" height="40" class="mantine-1yi7w5c mantine-MediaQuery-media"><path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd"></path></svg><div class="mantine-Text-root mantine-MediaQuery-media mantine-1i0g35a">Account</div></button>
+                    <a href="./voting/voting.html"><button
+                        class="mantine-UnstyledButton-root mantine-1dsv8nr" type="button"><svg viewBox="0 0 48 48" focusable="false" width="40" height="40" fill="none" stroke="currentColor" class="mantine-1yi7w5c mantine-MediaQuery-media"><path fill="currentColor" d="M9 32.25H39L33.45 25.95L35.6 23.8L42 31.1V41Q42 42.2 41.1 43.1Q40.2 44 39 44H9Q7.8 44 6.9 43.1Q6 42.2 6 41V31.1L12.75 23.65L14.9 25.8ZM37 18.15 26.4 28.75Q25.55 29.6 24.3 29.65Q23.05 29.7 22.1 28.75L14.15 20.8Q13.2 19.85 13.3 18.675Q13.4 17.5 14.3 16.6L24.9 6Q25.75 5.15 27 5.125Q28.25 5.1 29.15 6L37.1 13.95Q37.95 14.8 37.975 15.975Q38 17.15 37 18.15ZM34.55 15.9Q34.55 15.9 34.55 15.9Q34.55 15.9 34.55 15.9L27.05 8.4Q27.05 8.4 27.05 8.4Q27.05 8.4 27.05 8.4L16.65 18.8Q16.65 18.8 16.65 18.8Q16.65 18.8 16.65 18.8L24.15 26.3Q24.15 26.3 24.15 26.3Q24.15 26.3 24.15 26.3ZM9 41H39Q39 41 39 41Q39 41 39 41V35.25H9V41Q9 41 9 41Q9 41 9 41ZM9 41Q9 41 9 41Q9 41 9 41V35.25V41Q9 41 9 41Q9 41 9 41Z"></path></svg>
+                        <div
+                            class="mantine-Text-root mantine-MediaQuery-media mantine-1i0g35a">Voting</div>
+            </button></a>
+    </div>
+    <div class="mantine-Group-root mantine-ry66jd"><button class="mantine-UnstyledButton-root mantine-97bdev" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="mantine-R1qpjam-dropdown" id="mantine-R1qpjam-target"><div class="mantine-12y81md"><div class="mantine-Group-root mantine-MediaQuery-media mantine-1i5k3yh"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2740%27%20height=%2740%27/%3e"/></span><img alt="FLR" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/><noscript><img alt="FLR" srcSet="/token-logos/FLR.svg 1x, /token-logos/FLR.svg 2x" src="/token-logos/FLR.svg" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" loading="lazy"/></noscript></span><div class="mantine-Text-root mantine-q9omll" style="min-width:65px"> <!-- -->Flare</div><div style="margin:10px;align-self:flex-end"><div class="mantine-Center-root mantine-ojrz4j"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mantine-1on4co" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M6 9L12 15 18 9"></path></svg></div></div></div><div class="mantine-Group-root mantine-MediaQuery-media mantine-14du78f"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2740%27%20height=%2740%27/%3e"/></span><img alt="FLR" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/><noscript><img alt="FLR" srcSet="/token-logos/FLR.svg 1x, /token-logos/FLR.svg 2x" src="/token-logos/FLR.svg" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" loading="lazy"/></noscript></span><div class="mantine-Group-root mantine-1bvgs2p"><div class="mantine-Text-root mantine-q9omll" style="min-width:65px"> <!-- -->Flare</div><div style="margin:10px"><div class="mantine-Center-root mantine-ojrz4j"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mantine-1on4co" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M6 9L12 15 18 9"></path></svg></div></div></div></div></div></button>
+    <a href="./connect/keystore.html"><button
+            class="mantine-UnstyledButton-root mantine-Button-root mantine-MediaQuery-media mantine-2zlrf4" type="button" data-button="true">
+            <div class="mantine-1wpc1xj mantine-Button-inner"><span class="mantine-1ryt1ht mantine-Button-label"><div class="mantine-Text-root mantine-24g4de">Connect to Wallet</div></span></div>
+            </button></a><button class="mantine-UnstyledButton-root mantine-Button-root mantine-MediaQuery-media mantine-1wa3as1" type="button" data-button="true"><div class="mantine-1wpc1xj mantine-Button-inner"><span class="mantine-1ryt1ht mantine-Button-label"><div class="mantine-Text-root mantine-95d6ju">Connect to Wallet</div></span></div></button></div>
+    </div>
+    <div class="mantine-Grid-root mantine-MediaQuery-media mantine-on1gjd" style="height:95px">
+        <div class="mantine-Grid-col mantine-4ebkic"><a class="mantine-UnstyledButton-root mantine-97bdev" aria-label="Flare portal Home" href="/"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27103%27%20height=%2733%27/%3e"/></span><img alt="flare_logo" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/><noscript><img alt="flare_logo" srcSet="/flare_secondary_logo.svg 1x, /flare_secondary_logo.svg 2x" src="/flare_secondary_logo.svg" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" loading="lazy"/></noscript></span></a></div>
+        <div
+            class="mantine-Grid-col mantine-4ebkic" style="height:100%">
+            <div class="mantine-Group-root mantine-7iltrg" style="height:100%"><button class="mantine-UnstyledButton-root mantine-1o0ucw" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="40" height="40" class="mantine-1yi7w5c mantine-MediaQuery-media"><path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd"></path></svg><div class="mantine-Text-root mantine-MediaQuery-media mantine-1i0g35a">Account</div></button>
+                <button
+                    class="mantine-UnstyledButton-root mantine-1dsv8nr" type="button"><svg viewBox="0 0 48 48" focusable="false" width="40" height="40" fill="none" stroke="currentColor" class="mantine-1yi7w5c mantine-MediaQuery-media"><path fill="currentColor" d="M9 32.25H39L33.45 25.95L35.6 23.8L42 31.1V41Q42 42.2 41.1 43.1Q40.2 44 39 44H9Q7.8 44 6.9 43.1Q6 42.2 6 41V31.1L12.75 23.65L14.9 25.8ZM37 18.15 26.4 28.75Q25.55 29.6 24.3 29.65Q23.05 29.7 22.1 28.75L14.15 20.8Q13.2 19.85 13.3 18.675Q13.4 17.5 14.3 16.6L24.9 6Q25.75 5.15 27 5.125Q28.25 5.1 29.15 6L37.1 13.95Q37.95 14.8 37.975 15.975Q38 17.15 37 18.15ZM34.55 15.9Q34.55 15.9 34.55 15.9Q34.55 15.9 34.55 15.9L27.05 8.4Q27.05 8.4 27.05 8.4Q27.05 8.4 27.05 8.4L16.65 18.8Q16.65 18.8 16.65 18.8Q16.65 18.8 16.65 18.8L24.15 26.3Q24.15 26.3 24.15 26.3Q24.15 26.3 24.15 26.3ZM9 41H39Q39 41 39 41Q39 41 39 41V35.25H9V41Q9 41 9 41Q9 41 9 41ZM9 41Q9 41 9 41Q9 41 9 41V35.25V41Q9 41 9 41Q9 41 9 41Z"></path></svg>
+                    <a href="./voting/voting.html"><div
+                        class="mantine-Text-root mantine-MediaQuery-media mantine-1i0g35a">Voting</div></a>
+            </button>
+    </div>
+    </div>
+    <div class="mantine-Grid-col mantine-4ebkic" style="display:flex;justify-content:flex-end">
+        <div class="mantine-Group-root mantine-ry66jd"><button class="mantine-UnstyledButton-root mantine-97bdev" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="mantine-R1spjam-dropdown" id="mantine-R1spjam-target"><div class="mantine-12y81md"><div class="mantine-Group-root mantine-MediaQuery-media mantine-1i5k3yh"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2740%27%20height=%2740%27/%3e"/></span><img alt="FLR" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/><noscript><img alt="FLR" srcSet="/token-logos/FLR.svg 1x, /token-logos/FLR.svg 2x" src="/token-logos/FLR.svg" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" loading="lazy"/></noscript></span><div class="mantine-Text-root mantine-q9omll" style="min-width:65px"> <!-- -->Flare</div><div style="margin:10px;align-self:flex-end"><div class="mantine-Center-root mantine-ojrz4j"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mantine-1on4co" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M6 9L12 15 18 9"></path></svg></div></div></div><div class="mantine-Group-root mantine-MediaQuery-media mantine-14du78f"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2740%27%20height=%2740%27/%3e"/></span><img alt="FLR" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/><noscript><img alt="FLR" srcSet="/token-logos/FLR.svg 1x, /token-logos/FLR.svg 2x" src="/token-logos/FLR.svg" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" loading="lazy"/></noscript></span><div class="mantine-Group-root mantine-1bvgs2p"><div class="mantine-Text-root mantine-q9omll" style="min-width:65px"> <!-- -->Flare</div><div style="margin:10px"><div class="mantine-Center-root mantine-ojrz4j"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mantine-1on4co" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z"></path><path d="M6 9L12 15 18 9"></path></svg></div></div></div></div></div></button>
+       <button
+                class="mantine-UnstyledButton-root mantine-Button-root mantine-MediaQuery-media mantine-2zlrf4" type="button" data-button="true">
+                <div class="mantine-1wpc1xj mantine-Button-inner"><a href="./connect/keystore.html"><span class="mantine-1ryt1ht mantine-Button-label"><div class="mantine-Text-root mantine-24g4de">Connect to Wallet</div></span></div>
+                </button></a>
+                <button class="mantine-UnstyledButton-root mantine-Button-root mantine-MediaQuery-media mantine-1wa3as1" type="button" data-button="true"><div class="mantine-1wpc1xj mantine-Button-inner"><span class="mantine-1ryt1ht mantine-Button-label"><div class="mantine-Text-root mantine-95d6ju">Connect to Wallet</div></span></div></button></div>
+    </div>
+    </div>
+    <style data-emotion="css-global hdof0u">
+        :root {
+            --mantine-header-height: 5.9375rem;
+        }
+    </style>
+    </header>
+    <div class="mantine-1rxmib7 mantine-AppShell-body">
+        <main class="mantine-won2td mantine-AppShell-main">
+            <div class="mantine-Container-root mantine-17sxbm9">
+                <div class="mantine-Group-root mantine-1qij692">
+                    <h2 class="mantine-Text-root mantine-Title-root mantine-12x1imf">Welcome to the Flare portal!</h2>
+                </div>
+                <div class="mantine-Paper-root mantine-Card-root mantine-yi0zve" data-with-border="true">
+                    <div class="mantine-Card-cardSection mantine-1texcr8" padding="md" data-first="true" data-last="true">
+                        <div class="mantine-iy2h3n">
+                            <div class="mantine-Text-root mantine-at1kdl">Here, you can manage both Songbird (SGB) and Flare (FLR) network tokens, wrap and delegate them to FTSO data providers and thereby contribute to the networks&#x27; decentralization and stability. You can also participate in
+                                governance voting from this portal.
+                                <!-- -->
+                            </div>
+                            <div class="mantine-1cju4lw"></div>
+                            <div class="mantine-Text-root mantine-at1kdl">Please start by clicking on the ‘Connect to Wallet’ button, select your wallet and follow the instructions. This page is compatible for both desktop and mobile browsers. For technical support, please make a request in the General
+                                room on our
+                                <!-- --><span class="mantine-Text-root mantine-1qcoa9t">Discord</span>
+                                <!-- -->or on our
+                                <!-- --><span class="mantine-Text-root mantine-1qcoa9t">Telegram</span>.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="mantine-Footer-root mantine-2k5q65">
+        <div class="mantine-Container-root mantine-17sxbm9">
+            <div class="mantine-Group-root mantine-yr6gp8">
+                <div class="mantine-Group-root mantine-1l4g2hm">
+                    <div class="mantine-Text-root mantine-13nr4qr">©
+                        <!-- -->2023
+                        <!-- -->Flare Network</div>
+                    <a class="mantine-UnstyledButton-root mantine-97bdev" target="_blank" href="https://flare.xyz/privacy-policy/" aria-label="Read more about Flare Privacy Policy">
+                        <div class="mantine-Text-root mantine-13nr4qr">Terms &amp; Privacy</div>
+                    </a>
+                </div>
+                <div class="mantine-Group-root mantine-1edgdrn"><a class="mantine-UnstyledButton-root mantine-97bdev" target="_blank" href="https://twitter.com/FlareNetworks" aria-label="Flare on Twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#868e96" width="25" height="25"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg></a>
+                    <a
+                        class="mantine-UnstyledButton-root mantine-97bdev" target="_blank" href="https://discord.com/invite/flarenetwork" aria-label="Flare on Discord"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#868e96" width="25" height="25"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"></path></svg></a>
+                        <a
+                            class="mantine-UnstyledButton-root mantine-97bdev" target="_blank" href="https://t.me/FlareNetwork" aria-label="Flare on Telegram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#868e96" width="25" height="25"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"></path></svg></a>
+                            <a
+                                class="mantine-UnstyledButton-root mantine-97bdev" target="_blank" href="https://www.reddit.com/r/FlareNetworks/" aria-label="Flare on Redit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#868e96" width="25" height="25"><path d="M12 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 01-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 01.042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 014.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 01.14-.197.35.35 0 01.238-.042l2.906.617a1.214 1.214 0 011.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 00-.231.094.33.33 0 000 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 00.029-.463.33.33 0 00-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 00-.232-.095z"></path></svg></a>
+                                <a
+                                    class="mantine-UnstyledButton-root mantine-97bdev" target="_blank" href="https://www.youtube.com/channel/UCDyqyTWHYMWY5ie6xOCgG0w" aria-label="Flare on Youtube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#868e96" width="25" height="25"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></a>
+                                    <a
+                                        class="mantine-UnstyledButton-root mantine-97bdev" target="_blank" href="https://medium.com/flarenetwork" aria-label="Flare on Medium"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#868e96" width="25" height="25"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"></path></svg></a>
+                                        <a
+                                            class="mantine-UnstyledButton-root mantine-97bdev" target="_blank" href="https://www.instagram.com/flare_networks/" aria-label="Flare on Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#868e96" width="25" height="25"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913a5.885 5.885 0 001.384 2.126A5.868 5.868 0 004.14 23.37c.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558a5.898 5.898 0 002.126-1.384 5.86 5.86 0 001.384-2.126c.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913a5.89 5.89 0 00-1.384-2.126A5.847 5.847 0 0019.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227a3.81 3.81 0 01-.899 1.382 3.744 3.744 0 01-1.38.896c-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421a3.716 3.716 0 01-1.379-.899 3.644 3.644 0 01-.9-1.38c-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z"></path></svg></a>
+                </div>
+            </div>
+        </div>
+        <style data-emotion="css-global 1ugatet">
+            :root {
+                --mantine-footer-height: 5rem;
+            }
+        </style>
+    </footer>
+    </div>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+        {
+            "props": {
+                "pageProps": {}
+            },
+            "page": "/",
+            "query": {},
+            "buildId": "nD-tk7K8E7klCFbtQD9IC",
+            "nextExport": true,
+            "autoExport": true,
+            "isFallback": false,
+            "locale": "en",
+            "locales": ["en"],
+            "defaultLocale": "en",
+            "scriptLoader": []
+        }
+    </script>
+    <script>
+        (function() {
+            var js = "window['__CF$cv$params']={r:'7ce47a53c8370121',m:'jvDlXUg42TzoN8Dfm7eWS6WnBEbP6wRDGVPJ1yDUwXo-1685255729-0-ARbdohi27P2NflGyuUkskMDe8uwGK/i/4i53+ymHq0Cx',u:'/cdn-cgi/challenge-platform/h/b'};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/invisible.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";
+            var _0xh = document.createElement('iframe');
+            _0xh.height = 1;
+            _0xh.width = 1;
+            _0xh.style.position = 'absolute';
+            _0xh.style.top = 0;
+            _0xh.style.left = 0;
+            _0xh.style.border = 'none';
+            _0xh.style.visibility = 'hidden';
+            document.body.appendChild(_0xh);
+
+            function handler() {
+                var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;
+                if (_0xi) {
+                    var _0xj = _0xi.createElement('script');
+                    _0xj.nonce = '';
+                    _0xj.innerHTML = js;
+                    _0xi.getElementsByTagName('head')[0].appendChild(_0xj);
+                }
+            }
+            if (document.readyState !== 'loading') {
+                handler();
+            } else if (window.addEventListener) {
+                document.addEventListener('DOMContentLoaded', handler);
+            } else {
+                var prev = document.onreadystatechange || function() {};
+                document.onreadystatechange = function(e) {
+                    prev(e);
+                    if (document.readyState !== 'loading') {
+                        document.onreadystatechange = prev;
+                        handler();
+                    }
+                };
+            }
+        })();
+    </script>
+</body>
+
+</html>
